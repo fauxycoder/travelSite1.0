@@ -1,0 +1,334 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav{
+    width:100%;
+    padding:10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 15px 0 rgba(100,100,100,.2);
+    position: relative;
+}
+.nav .logo a img{
+    width:120px;
+}
+.nav .burger{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+.close{
+    font-size: 25px;
+    cursor: pointer;
+    color:#fff;
+    font-weight:bold;
+    display: none; 
+}
+
+.menu{
+    position: relative;
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.menu li a{
+    text-decoration: none;
+    color:#3d7287;
+    font-size: 22px;
+    transition-duration: .5s;
+}
+.menu li a:hover{
+    color:#fff;
+    background-color: #3d7287;
+    padding:6px;
+}
+
+.hero{
+    width:100%;
+    background-color: #fff;
+    display: flex;
+}
+
+.hero .textDiv{
+    width:45%;
+    padding:150px 20px 50px 50px;
+}
+.hero .textDiv h1{
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    color:#3d7287;
+    margin-bottom: 10px;
+}
+.hero .textDiv p{
+    color:#555;
+    margin-bottom: 50px;
+}
+.hero .textDiv .subscribe{
+    width:400px;
+    background-color: rgba(61, 114, 135, 0.3);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 0 rgba(100,100,100,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero .textDiv .subscribe input{
+    border:none;
+    width:250px;
+    padding:8px;
+    margin-right: 8px;
+}
+.hero .textDiv .subscribe button{
+    background-color: #3d7287;
+    padding:8px 14px;
+    border:none;
+    color:#fff;
+}
+.hero .imgDiv{
+    width:55%;
+}
+.hero .imgDiv img{
+    width:100%;
+    height: 650px;
+    object-fit: cover;
+}
+.explore{
+    width:100%;
+    padding:100px 50px;
+    background-color: #fff;
+}
+.explore .exploreHeading{
+    color:#3d7287;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.explore .exploreDiv{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.explore .exploreDiv .card{
+    width:30%;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px 0 rgba(100,100,100,.2);
+}
+.explore .exploreDiv .card img{
+    width:100%;
+}
+.explore .exploreDiv .card h3{
+    color: #ff7a06;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.explore .exploreDiv .card p{
+    font-size: 14px;
+    color:#555;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.explore .exploreDiv .card .amount{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+}
+.explore .exploreDiv .card .amount span{
+    color:#3d7287;
+    font-weight: bold;
+    font-size: 14px;
+}
+.explore .exploreDiv .card .amount a{
+    background-color: #3d7287;
+    padding:10px 12px;
+    color:#fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition-duration: .5s;
+}
+.explore .exploreDiv .card .amount a:hover{
+    background-color: #000;
+}
+.reviewDiv{
+    width:100%;
+    position: relative;
+    padding: 20px 50px 80px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviewDiv .reviewImg{
+    width:60%;
+    height: 300px;
+    background-image: url(/images/review.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.reviewDiv .reviewCard{
+    width:40%;
+    height: auto;
+    padding:20px;
+    position: relative;
+    left:-100px;
+    box-shadow: 0 0 10px 0 rgba(61, 114, 135, 0.3);
+    border-radius: 8px;
+    background-color: #fff;
+}
+.reviewDiv .reviewCard h3{
+    color:#ff7a06;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.reviewDiv .reviewCard p{
+    color:#555;
+}
+.reviewDiv .reviewCard .customer{
+  display: flex;
+  align-items: center; 
+  margin-top: 20px; 
+}
+.reviewDiv .reviewCard .customer img{
+    margin-right: 10px;
+    border:3px solid #3d7287;
+    border-radius: 50%;
+}
+.reviewDiv .reviewCard .customer span{
+    font-size: 18px;
+}
+footer{
+    width:100%;
+    background-color: #3d7287;
+    color:#eee;
+    text-align: center;
+    padding:30px;
+}
+
+@media screen and (max-width:1200px){
+    .hero .textDiv .subscribe{
+        width:280px;
+    }
+    .hero .textDiv .subscribe input{
+        width:200px;
+    }
+    .hero .textDiv .subscribe button{
+        padding:6px 12px;
+    }
+}
+/**768px device**/
+@media screen and (max-width:768px){
+    .nav .burger{
+    display: block;
+   }
+   .close{
+    display: block; 
+    width:100%;
+    text-align: right;
+}
+.menu{
+    position: absolute;
+    width:0%;
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: #3d7287;
+    top:0;
+    left:0;
+    height: 400px;
+    padding:40px;
+    transition-duration: .8s;
+}
+.menu li a{
+    color:#fff;
+}
+.menu li a:hover{
+    background-color: #ff7a06;
+}
+.hero{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero .textDiv{
+    width:100%;
+    padding:100px 10px 20px 10px;
+    text-align: center;
+}
+.hero .textDiv .subscribe{
+    width:100%;
+    border-radius: 0;
+}
+.hero .textDiv .subscribe input{
+    width:250px;
+}
+.hero .textDiv .subscribe button{
+    padding:8px 16px;
+}
+.hero .textDiv h1{
+    font-size: 30px;
+}
+.hero .imgDiv{
+    width:80%;
+    margin-top: 50px;
+}
+.hero .imgDiv img{
+    height: 300px;
+    object-fit: cover;
+    border-left: 10px solid #ff7a06;
+}
+.explore{
+    padding:100px 20px;
+}
+.explore .exploreHeading{
+    font-size: 20px;
+}
+.explore .exploreDiv{
+    margin-top: 50px;
+}
+.explore .exploreDiv .card{
+    width:100%;
+}
+.reviewDiv{
+    width:100%;
+    position: relative;
+    padding: 20px 20px 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.reviewDiv .reviewImg{
+    width:100%;
+}
+.reviewDiv .reviewCard{
+    width:80%;
+    left:0;
+    top:-70px;
+}
+}
+
+
+
+
+
+
+
+

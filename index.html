@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Travel Site</title>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <a href="#"><img src="/images/logo.png" alt="logo"></a></div>
+            <!--Hamburger icon-->
+    <span class="burger">&#x2630;</span>
+    <ul class="menu" id="menu">
+        <div class="close">x</div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+        </div>
+        <!--Hero section starts here-->
+        <div class="hero">
+            <div class="textDiv">
+                <h1>Spend Your <span style="color:#ff7a06;">Holiday</span> with us.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                 elit. Deserunt sed ipsa dolorum repudiandae. Enim vero totam dicta</p>
+            
+                <div class="subscribe">
+                    <input type="email" name="email" placeholder="example123@gmail.com">
+                    <button>Subscribe</button>
+                </div>
+                </div>
+                <div class="imgDiv"><img src="/images/hero.jpg" alt="dubai"></div>
+        </div>
+        <!--Explore section starts here-->
+        <div class="explore">
+            <div class="exploreHeading">Explore nearby travel destinations</div>
+            <div class="exploreDiv">
+                <div class="card">
+                    <img src="/images/turkey.jpg" alt="turkey">
+                    <h3>Cappaddocia</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                    adipisicing elit. Deserunt sed ipsa dolorum repudiandae. Enim</p>
+                    <div class="amount">
+                        <span>$800</span>
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/paris.jpg" alt="paris">
+                    <h3>Paris</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                    adipisicing elit. Deserunt sed ipsa dolorum repudiandae. Enim</p>
+                    <div class="amount">
+                        <span>$1,200</span>
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/amsterdam.jpg" alt="amsterdam">
+                    <h3>Cappaddocia</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                    adipisicing elit. Deserunt sed ipsa dolorum repudiandae. Enim</p>
+                    <div class="amount">
+                        <span>$1,500</span>
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/venice.jpg" alt="venice">
+                    <h3>Venice</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                    adipisicing elit. Deserunt sed ipsa dolorum repudiandae. Enim</p>
+                    <div class="amount">
+                        <span>$2000</span>
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/turkey.jpg" alt="turkey">
+                    <h3>Cappaddocia</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                    adipisicing elit. Deserunt sed ipsa dolorum repudiandae. Enim</p>
+                    <div class="amount">
+                        <span>$800</span>
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/paris.jpg" alt="paris">
+                    <h3>paris</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                    adipisicing elit. Deserunt sed ipsa dolorum repudiandae. Enim</p>
+                    <div class="amount">
+                        <span>$1,200</span>
+                        <a href="#">Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--review section starts here-->
+        <div class="reviewDiv">
+            <div class="reviewImg"></div>
+            <div class="reviewCard">
+                <h3>What Our Customer's Say</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur
+                 adipisicing elit. Sunt, iusto repellat! Atque amet
+                  molestiae quos perspiciatis, repudiandae eos! Delectus, eius. Hic
+                 quaerat voluptates doloribus sapiente sit cupiditate tenetur praesentium repellat?</p>
+                    
+                 <div class="customer">
+                    <img src="/images/customer.png" alt="customer">
+                    <span>John Doe</span>
+                 </div>
+                </div>
+        </div>
+        <footer>Travel Site 2022 &copy; All Rights Served</footer>
+        
+        <script>
+                var burgerDiv = document.querySelector('.burger');
+                var closeDiv = document.querySelector('.close');
+                /**var MenuDiv = document.querySelector('.menu');**/
+
+                burgerDiv.addEventListener('click', () => {
+                    document.getElementById("menu").style.width = "100%";
+                    document.getElementById("menu").style.opacity = 1;
+                });
+
+                closeDiv.addEventListener('click', () => {
+                    document.getElementById("menu").style.width = 0;
+                    document.getElementById("menu").style.opacity = 0;
+                })
+
+            </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
